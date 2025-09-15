@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: aliceblue;
-  overflow-x: hidden;
+  overflow-x: hidden;/*manipula pula o scroll horizontal de uma página */
 }
 header {
   height: 100px;
@@ -19,29 +19,29 @@ header {
 }
 .user-container {
   display: grid;
-  font-family: cursive;
+  font-family: cursive; /*Muda o estilo da fonte de texto*/
   color: rgb(129, 145, 145);
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr)) ;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   user-select: none;
-  padding-inline: 12vw;
+  padding-inline: 12vw; /*Gera espaço no inicio e no final de um elemento, por padrão o espaço gerado é na horizontal*/
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
-.user-card{
-    aspect-ratio: 1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px;
-    box-shadow: 0 0 1px #666;
+.user-card {
+  aspect-ratio: 1; /*serve para manter a proporcionalidade de altura e largura independente do tamanho da janela ou tamanho do pai */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 0 1px #666;
 }
-.user-card:hover{
-    box-shadow:0 0 32px #666 ;
+.user-card:hover {
+  box-shadow: 0 0 32px #666;
 }
-img{
-    border-radius: 50%;
-    border:2px solid #666;
-    padding: 6px;
+img {
+  border-radius: 50%;
+  border: 2px solid #666;
+  padding: 6px;
 }

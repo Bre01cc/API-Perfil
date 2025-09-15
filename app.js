@@ -15,6 +15,7 @@ async function getUsers() {
     //Aqui fica o retorno da função, que devove para que chamar o JSON(vale embra que esse comentarios são 100% veridicos)
     return data.results
 }
+//Responsavel por carregar os perfis de usuários. Além de inseri-los no html da página.
 async function loadUsers() {
     const users = await getUsers()
     const container = document.getElementById('user-container')
